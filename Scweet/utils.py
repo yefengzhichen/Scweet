@@ -291,6 +291,7 @@ def keep_scroling(driver, data, writer, tweet_ids, scrolling, tweet_parsed, limi
                     data.append(tweet)
                     last_date = str(tweet[2])
                     print("Tweet made at: " + str(last_date) + " is found.")
+                    print(tweet) 
                     writer.writerow(tweet)
                     tweet_parsed += 1
                     if tweet_parsed >= limit:
